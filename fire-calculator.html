@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Withdrawal Calculator</title>
+    <title>A N A N D &ensp; P A N D E</title>
+
+    <link rel="shortcut icon" href="./assets/profile-pic.png">
+    <link rel="stylesheet" href="./fire/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Investment Withdrawal Calculator</h1>
+    <form id="calculator-form">
+      <label for="initial-investment">Initial Investment (INR):</label>
+      <input type="number" id="initial-investment" placeholder="Enter initial investment" required>
+
+      <label for="withdrawal-rate">Annual Withdrawal Rate (%):</label>
+      <input type="number" id="withdrawal-rate" placeholder="Enter withdrawal rate" required>
+
+      <label for="inflation-rate">Inflation Rate (%):</label>
+      <input type="number" id="inflation-rate" placeholder="Enter inflation rate" required>
+
+      <label for="return-rate">Annual Return Rate (%):</label>
+      <input type="number" id="return-rate" placeholder="Enter return rate" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result" class="result">
+      <h2>You are financially free for <span id="years-count"></span> years!</h2>
+      <p id="starting-income" class="starting-income"></p>
+
+      <button id="toggle-results" class="toggle-button">Show Year Wise Calculations</button>
+      <div id="results-container" class="results-dropdown">
+        <!-- Calculated results will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="./fire/script.js"></script>
+</body>
+</html>

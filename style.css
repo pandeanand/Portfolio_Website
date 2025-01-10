@@ -58,6 +58,24 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.btn-color-3 {
+  border: #239b74 0.1rem solid;
+  background: none;
+  color: #239b74;
+}
+
+.btn-color-3:hover {
+  background: #239b74;
+  color: white;
+}
+
+.center-align {
+  display: flex;         /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center;   /* Centers vertically (if the container has a height) */
+  margin: 20px auto;     /* Adds space around and centers on the page */
+}
+
 .logo {
   font-size: 2rem;
 }
